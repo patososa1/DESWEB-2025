@@ -16,7 +16,7 @@ const baseDeDatos = {
   function agregarTarea() {
     const input = document.getElementById('tareaInput');
     const mensajeDiv = document.getElementById('mensaje');
-    const tarea = input.value.trim();
+    const tarea = sanitize(input.value.trim());
   
     if (tarea === '') {
       mensajeDiv.textContent = "⚠️ La tarea no puede estar vacía.";
@@ -47,4 +47,10 @@ const baseDeDatos = {
       listaContainer.appendChild(item);
     });
   }
+
+function sanitize(text) {
+  const temp = document.createElement('div');
+  temp.textContent = text;
+  return temp.innerHTML;
+}
   
