@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "Turno" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "fecha" DATETIME NOT NULL,
+    "estado" TEXT NOT NULL DEFAULT 'PENDIENTE',
+    "pacienteId" INTEGER NOT NULL,
+    "profesionalId" INTEGER NOT NULL
+);
