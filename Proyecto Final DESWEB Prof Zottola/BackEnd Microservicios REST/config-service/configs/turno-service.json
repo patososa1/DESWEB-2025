@@ -1,0 +1,5 @@
+{
+  "db_path": "database/turno.db",
+  "port": 3002,
+  "jwt_secret": "secreto_turno"
+}

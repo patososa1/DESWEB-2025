@@ -1,0 +1,15 @@
+{
+  "name": "proyecto-final-prof-zottola",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+"dev": "concurrently \"npm --prefix frontend run dev\" \"node config-service/index.js\" \"node gateway/app.js\" \"node usuario-service/src/app.js\" \"node usuario-service2/src/app.js\" \"node turno-service/src/app.js\" \"node turno-service2/src/app.js\" \"start nginx/nginx/nginx.exe\""
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
